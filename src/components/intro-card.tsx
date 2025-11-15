@@ -26,28 +26,32 @@ export async function IntroCard() {
         </CardDescription>
       </CardHeader>
       <CardContent className="grid grid-cols-1 gap-1">
-        <div className="flex items-center gap-1 text-sm">
-          <div className="flex items-center gap-2">
-            <Earth size={20} className="text-primary" />
-            based in
+        <div className="flex max-md:flex-col gap-1 text-sm">
+          <div className="flex flex-wrap items-center gap-x-1 gap-y-0.5">
+            <Earth size={20} className="text-primary shrink-0" />
+            <span>based in</span>
+            <Link
+              href="https://www.google.com/maps/place/Kansas+City,+MO"
+              className="flex items-center gap-1 hover:!underline underline-offset-4 dark:text-pink-200 whitespace-nowrap"
+              target="_blank"
+            >
+              kansas city, missouri
+              <ExternalLink size={16} />
+            </Link>
+            <span className="hidden sm:inline">—</span>
           </div>
-          <Link
-            href="https://www.google.com/maps/place/Kansas+City,+MO"
-            className="flex items-center gap-1 hover:!underline underline-offset-4 dark:text-pink-200"
-            target="_blank"
-          >
-            kansas city, missouri
-            <ExternalLink size={16} />
-          </Link>
-          ({Math.floor(Number(weatherData.temp))}°F, feels like{" "}
-          {Math.floor(Number(weatherData.feels_like))}°F –{" "}
-          <Link
-            href="https://weather.com/weather/today/l/ca02b719be146accb87228b3fe12ee0339fe9773d341f4b080c0e094d9fa0edf"
-            className="hover:!underline underline-offset-4 dark:text-pink-200"
-          >
-            {weatherData.description}
-          </Link>
-          )
+          <div className="flex flex-wrap items-center gap-x-1 gap-y-0.5">
+            <span>
+              ({Math.floor(Number(weatherData.temp))}°F, feels like {Math.floor(Number(weatherData.feels_like))}°F –{" "}
+            </span>
+            <Link
+              href="https://weather.com/weather/today/l/ca02b719be146accb87228b3fe12ee0339fe9773d341f4b080c0e094d9fa0edf"
+              className="hover:!underline underline-offset-4 dark:text-pink-200"
+            >
+              {weatherData.description}
+            </Link>
+            <span>)</span>
+          </div>
         </div>
 
         <div className="flex items-center gap-2 text-sm">
