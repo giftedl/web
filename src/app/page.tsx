@@ -1,103 +1,133 @@
+import { GradientClientComponent } from "@/components/gradient-client-component";
+import { IntroCard } from "@/components/intro-card";
+import { SocialCard } from "@/components/social-card";
+import { EntertainmentCard } from "@/components/entertainment-card";
 import Image from "next/image";
+import Link from "next/link";
+import { AboutMeCard } from "@/components/about-me";
+import { InteractCard } from "@/components/interact-side";
+import { IMAGE_CONSTANTS } from "@/lib/image-constants";
+import { Separator } from "@/components/ui/separator";
+import { GitHub } from "@/components/github";
+import { Bluesky } from "@/components/ui/svgs/bluesky";
+import { getWeatherData } from "./server";
+import { GitBranch } from "lucide-react";
 
-export default function Home() {
+export default async function Home() {
   return (
-    <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="font-mono list-inside list-decimal text-sm/6 text-center sm:text-left">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] font-mono font-semibold px-1 py-0.5 rounded">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
+    <div className="font-sans ">
+      <GradientClientComponent />
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+      <div className="lg:flex p-4 lg:px-40 -translate-y-30 gap-2">
+        <div className="max-lg:hidden">
+          <div className="rounded-2xl border w-[245px] h-fit bg-card text-card-foreground mb-2">
             <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
+              src="/image/IMG_1569.jpg"
+              alt="Kaoruko in front of a fan"
+              width={736}
+              height={981}
+              className="rounded-2xl"
             />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+            <div className="p-2 text-sm text-center">
+              <Link
+                href="https://x.com/_mikami_saka_/status/1558652314944434179"
+                className="dark:text-pink-200 text-black !underline decoration-pink-200"
+                target="_blank"
+              >
+                Link - @_mikami_saka_
+              </Link>
+            </div>
+          </div>
+          <div className="rounded-2xl border w-[245px] h-fit bg-card text-card-foreground mb-2">
+            <Image
+              src="/image/IMG_1570.jpg"
+              alt="Kaoruko in front of a fan"
+              width={736}
+              height={981}
+              className="rounded-2xl"
+            />
+            <div className="p-2 text-sm text-center">
+              Anime: Fragrant Flower Blooms with Dignity
+            </div>
+          </div>
+          <div className="rounded-2xl border w-[245px] h-fit bg-card text-card-foreground">
+            <Image
+              src={IMAGE_CONSTANTS.HORIMIYA_PICTURE}
+              alt="The two walking together :relaxed:"
+              width={736}
+              height={981}
+              className="rounded-2xl"
+            />
+            <div className="p-2 text-sm text-center">Anime: Horimiya</div>
+          </div>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+
+        <div className="grid gap-2 w-full">
+          <div className="grid 2xl:grid-cols-2 gap-2">
+            <IntroCard />
+            <SocialCard />
+          </div>
+          <div className="grid 2xl:grid-cols-2 gap-2">
+            <AboutMeCard />
+            <InteractCard />
+          </div>
+          <EntertainmentCard />
+        </div>
+      </div>
+      <Separator />
+      <div className="bg-muted">
+        <div className="mx-auto flex w-full max-w-4xl flex-col gap-8 px-8 py-5 md:flex-row md:items-stretch md:justify-between">
+          <div className="grid grid-cols-2 gap-2 md:shrink-0 md:grid-cols-2 md:gap-x-8 md:gap-y-1">
+            <Link
+              href="https://github.com/giftedl/web"
+              className="flex items-center gap-1 text-lg text-accent-foreground hover:!underline underline-offset-4"
+            >
+              <GitBranch className="fill-accent-foreground size-5" /> Source Code
+            </Link>
+            <Link
+              href="https://bsky.app/profile/giftedly.dev"
+              className="flex items-center gap-1 text-lg text-accent-foreground hover:!underline underline-offset-4"
+            >
+              <Bluesky className="fill-accent-foreground size-5" /> Bluesky
+            </Link>
+          </div>
+          <div className="flex flex-col gap-2 text-left text-base text-muted-foreground md:shrink md:grow-0 md:gap-1 md:text-right">
+            <p>
+              built with 🫶 in{" "}
+              <Link
+                href="https://nextjs.org"
+                className="text-accent-foreground hover:!underline underline-offset-4"
+              >
+                Next.js
+              </Link>
+              ,{" "}
+              <Link
+                href="https://react.dev"
+                className="text-accent-foreground hover:!underline underline-offset-4"
+              >
+                React
+              </Link>{" "}
+              &{" "}
+              <Link
+                href="https://tailwindcss.com"
+                className="text-accent-foreground hover:!underline underline-offset-4"
+              >
+                Tailwind
+              </Link>
+            </p>
+            <p>website licensed under MIT License 🏳️‍⚧️🏳️‍🌈</p>
+            <p>
+              <Link
+                href="https://github.com/giftedl/web"
+                className="text-accent-foreground hover:!underline underline-offset-4"
+              >
+                giftedl/web
+              </Link>{" "}
+              <code>v3</code>
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }

@@ -7,13 +7,13 @@ import { QueryClient } from "@tanstack/query-core";
 import { getDiscordAccountData } from "@/app/actions";
 import Image from "next/image"
 
-export function DiscordSocialIcon() {
+export function DiscordSocialBanner() {
     const queryClient = new QueryClient()
 
     return (
         <Suspense
             fallback={
-                <Discord className="mx-auto size-6"/> as ReactNode
+                <></> as ReactNode
             }
         >
             <QueryClientProvider client={queryClient}>
@@ -28,5 +28,12 @@ function RenderedSocialIcon() {
 
     if (query.isLoading) return null;
 
-    return <Image src={query.data?.avatar} width={128} height={128} className="size-10 rounded-3xl border mx-auto"/>
+    return <Image
+        src={query.data?.banner}
+        width={128}
+        height={128}
+        className="transition-all hidden lg:group-hover:block absolute z-0 opacity-30 top-0 w-full rounded-t-md max-lg:hidden"
+        style={{
+            maskImage: "linear-gradient(to top, transparent 0%, black 99%, black 100%)"
+        }}/>
 }
