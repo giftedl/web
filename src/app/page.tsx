@@ -40,7 +40,7 @@ export default async function Home() {
           </div>
           <div className="rounded-2xl border w-[245px] h-fit bg-card text-card-foreground mb-2">
             <Image
-              src="/image/IMG_1570.jpg"
+              src="/image/IMG_1570.JPG"
               alt="Kaoruko in front of a fan"
               width={736}
               height={981}
