@@ -18,7 +18,7 @@ export default async function Home() {
     <div className="font-sans ">
       <GradientClientComponent />
 
-      <div className="lg:flex p-4 lg:px-40 -translate-y-30 gap-2">
+      <div className="lg:flex p-4 lg:px-40 w-full -translate-y-30 gap-2">
         <div className="max-lg:hidden">
           <div className="rounded-2xl border w-[245px] h-fit bg-card text-card-foreground mb-2">
             <Image

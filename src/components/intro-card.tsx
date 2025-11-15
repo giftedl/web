@@ -18,10 +18,10 @@ export async function IntroCard() {
       <CardHeader>
         <CardTitle className="text-[32px] flex items-center gap-3 text-center">
           hi, i'm <div className="dark:text-pink-200">giftedly!</div>{" "}
-          <div className="font-normal text-muted-foreground">– she/they</div>
+          <div className="font-normal text-muted-foreground max-md:hidden">– she/they</div>
         </CardTitle>
-        <BottomSeparator className="-translate-y-2" />
-        <CardDescription className="text-[16px]">
+        <BottomSeparator className="-translate-y-2 max-md:hidden" />
+        <CardDescription className="text-[16px] text-wrap max-md:max-w-[300px]">
           i'm a young full-stack developer that builds cool things.
         </CardDescription>
       </CardHeader>
