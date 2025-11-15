@@ -4,18 +4,11 @@ import { Button } from "@/components/ui/button";
 import { GitHub } from "@/components/github";
 import { Discord } from "@/components/discord";
 import { Bluesky } from "@/components/ui/svgs/bluesky";
-import { ReactNode } from "react";
-import { DiscordSocialIcon } from "@/components/discord-social-icon";
-import { DiscordSocialBanner } from "@/components/discord-banner";
-import Image from "next/image";
-import { BlueskySocialIcon } from "@/components/bluesky-social-icon";
-import { BlueskySocialBanner } from "@/components/bluesky-banner";
 import { cn } from "@/lib/utils";
 
 const socialData = [
     {
         link: "https://github.com/giftedl",
-        icon: <Image src="https://github.com/giftedl.png" width={128} height={128} className="size-10 rounded-3xl border mx-auto"/>,
         platformIcon: <GitHub className="mx-auto size-8 fill-black dark:fill-white"/>,
         banner: null,
         name: "GitHub",
@@ -23,17 +16,13 @@ const socialData = [
     },
     {
         link: "https://discord.com/users/1252031635692720224",
-        icon: <DiscordSocialIcon />,
         platformIcon: <Discord className="mx-auto size-8"/>,
-        banner: <DiscordSocialBanner />,
         name: "Discord",
         username: "@giftedly"
     },
     {
         link: "https://bsky.app/profile/giftedly.dev",
-        icon: <BlueskySocialIcon />,
         platformIcon: <Bluesky className="mx-auto size-8"/>,
-        banner: <BlueskySocialBanner />,
         name: "Bluesky",
         username: "@giftedly.dev"
     }
