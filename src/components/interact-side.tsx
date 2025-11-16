@@ -45,7 +45,7 @@ export function InteractCard() {
               <i>anti-lgbtq+</i>: you are homophobic and/or transphobic
             </li>
             <li >
-              <i>anti-cross-orientation</i>: you are opposed to lesbian FTM or
+              <i>anti-cross-orientation</i>: you openly hate or significantly point out people who are lesbian FTM or
               vice versa (
               <Link
                 href="https://rentry.co/ftmlesbianism"
