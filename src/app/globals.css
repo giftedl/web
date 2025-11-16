@@ -152,3 +152,7 @@
   }
   
 }
+
+a.link {
+  @apply text-accent-foreground hover:!underline underline-offset-4;
+}
