@@ -48,7 +48,7 @@ export function InteractCard() {
               <i>anti-cross-orientation</i>: you openly hate or significantly point out people who are lesbian FTM or
               vice versa (
               <Link
-                href="https://rentry.co/ftmlesbianism"
+                href="https://rentry.co/ftmles"
                 className="hover:!underline underline-offset-4 dark:text-pink-200"
                 target="_blank"
               >
