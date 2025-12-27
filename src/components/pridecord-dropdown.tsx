@@ -54,7 +54,7 @@ export function PridecordDropdownContent() {
               <span className="flex w-full items-center justify-between">
                 <span>Roles</span>
                 <span className="flex gap-1">
-                  <Badge>Trial Mod</Badge>
+                  <Badge>Developer</Badge>
                   <Badge variant="outline">+1</Badge>
                 </span>
               </span>
@@ -64,7 +64,7 @@ export function PridecordDropdownContent() {
                 <DropdownMenuItem>
                   <Badge>
                     <Shield className="text-white dark:text-black" />
-                    Trial Moderator
+                    Developer
                   </Badge>
                 </DropdownMenuItem>
                 <DropdownMenuItem>
@@ -100,7 +100,7 @@ export function PridecordDropdownContent() {
                   {
                     name: "Scar",
                     username: "@scarland.",
-                    badges: ["Friend", "Mod"],
+                    badges: ["Friend", "Sr. Mod"],
                     discord: "616326184170422343",
                     pronouns: "he/hxm/it/rot",
                     link: "https://rentry.co/scriptured",
