@@ -50,15 +50,8 @@ export function AboutMeCard() {
             variety of genres, with my all-time favorite being japanese pop
             music (j-pop).
           </p>
-          <h3 className="scroll-m-20 text-2xl font-semibold tracking-tight">
-            pronoun identity
-          </h3>
           <p className="tracking-7">
-            i'm <PronounNonconforming /> & <CrossPronominal />! these mean that
-            even though i identify with pronouns as she/they, i'm still a male.
-            i'd prefer if you would <b>not</b> refer to me with masculine
-            pronouns. certain masculine terms used usually neutrally (ie. bro)
-            is okay.
+            i'm transfem! that means i go by she/they pronouns, usually not too strict about that.
           </p>
         </div>
       </ScrollArea>
