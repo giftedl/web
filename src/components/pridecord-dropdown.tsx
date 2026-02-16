@@ -108,7 +108,7 @@ export function PridecordDropdownContent() {
                   {
                     name: "Kris",
                     username: "@kel3159",
-                    badges: ["Friend", "Helper"],
+                    badges: ["Friend", "Trial Mod"],
                     discord: "526137220353097746",
                     pronouns: "they/them",
                     link: "#",
