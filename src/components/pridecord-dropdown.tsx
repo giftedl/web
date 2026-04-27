@@ -106,14 +106,6 @@ export function PridecordDropdownContent() {
                     link: "https://rentry.co/scriptured",
                   },
                   {
-                    name: "Kris",
-                    username: "@kel3159",
-                    badges: ["Friend", "Trial Mod"],
-                    discord: "526137220353097746",
-                    pronouns: "they/them",
-                    link: "#",
-                  },
-                  {
                     name: "Raine",
                     username: "@raincloudzy",
                     badges: ["Friend", "Mod"],
