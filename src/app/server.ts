@@ -2,6 +2,8 @@
 "use server";
 
 export async function getWeatherData() {
+  if (!process.env.OWM_KEY) { return null; }
+
   const parameters = new URLSearchParams({
     q: "Kansas City",
     appid: process.env.OWM_KEY as string,
