@@ -98,6 +98,14 @@ export function PridecordDropdownContent() {
                     link: "#",
                   },
                   {
+                    name: "Trout",
+                    username: "@trout_smacker",
+                    badges: ["Friend", "Cmty. Manager"],
+                    discord: "513508260427333633",
+                    pronouns: "he/they",
+                    link: "#",
+                  },
+                  {
                     name: "Scar",
                     username: "@scarland.",
                     badges: ["Friend", "Sr. Mod"],
