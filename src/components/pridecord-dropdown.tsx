@@ -84,7 +84,7 @@ export function PridecordDropdownContent() {
                   {
                     name: "Austin",
                     username: "@auxtinn",
-                    badges: ["Owner"],
+                    badges: ["Friend", "Owner"],
                     link: "https://austinn.dev",
                     discord: "288897433805651968",
                     pronouns: "he/him",
@@ -92,7 +92,7 @@ export function PridecordDropdownContent() {
                   {
                     name: "Shane",
                     username: "@jetcrooked",
-                    badges: ["Owner"],
+                    badges: ["Friend", "Owner"],
                     discord: "238353818125991936",
                     pronouns: "he/him",
                     link: "#",
