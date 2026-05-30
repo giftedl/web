@@ -25,7 +25,7 @@ export function AboutMeCard() {
       <ScrollArea className={`w-full h-[300px] ${inter.className}`}>
         <div className="space-y-3 pr-3 font-inter text-[15px]">
           <h2 className="scroll-m-20 border-b pb-2 text-3xl font-semibold tracking-tight first:mt-0">
-            about me ^_^
+            about me
           </h2>
           <p className="leading-7">
             hello there! welcome to my site! i'm a full stack web developer from
@@ -39,20 +39,6 @@ export function AboutMeCard() {
             <Discord className="size-6" />
             <MongodbIconDark className="size-6" />
           </div>
-          <p className="leading-7">
-            you can often see me around chatting on Pridecord or programming.
-            i've made numerous projects over the years throughout various
-            different stacks so i'm pretty active in coding.
-          </p>
-          <p className="leading-7">
-            additionally i also enjoy listening to music a lot. i don't really
-            have many favorite songs so to speak but i'm often listening to a
-            variety of genres, with my all-time favorite being japanese pop
-            music (j-pop).
-          </p>
-          <p className="tracking-7">
-            i'm transfem! that means i go by she/they pronouns, usually not too strict about that.
-          </p>
         </div>
       </ScrollArea>
     </Card>

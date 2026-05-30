@@ -24,14 +24,9 @@ export function InteractCard() {
           </div>
           <ul className="my-6 pl-4 ml-6 text-[15px] list-disc [&>li]:mt-2">
             <li>are also in or related to tech</li>
-            <li>love cats :3</li>
+            <li>love cats </li>
             <li>like similar music genres to me</li>
-            <li>funny!</li>
           </ul>
-          <small className="text-sm pl-4 leading-none font-medium">
-            don't take this as i won't like you if you aren't the above. i talk
-            to about anyone!
-          </small>
         </TabsContent>
 
         <TabsContent value="dni" className={inter.className}>

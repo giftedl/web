@@ -21,10 +21,6 @@ export async function IntroCard() {
           hi, i'm <div className="dark:text-pink-200">giftedly!</div>{" "}
           <div className="font-normal text-muted-foreground max-md:hidden">– she/they</div>
         </CardTitle>
-        <BottomSeparator className="-translate-y-2 max-md:hidden" />
-        <CardDescription className="text-[16px] text-wrap max-md:max-w-[300px]">
-          i'm a young full-stack developer that builds cool things.
-        </CardDescription>
       </CardHeader>
       <CardContent className="grid grid-cols-1 gap-1">
         <div className="flex max-md:flex-col gap-1 text-sm">

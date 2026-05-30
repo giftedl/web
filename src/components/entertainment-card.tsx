@@ -20,49 +20,6 @@ export function EntertainmentCard() {
   return (
     <Card className="w-full">
       <CardContent className="2xl:grid 2xl:grid-cols-6 pb-2 gap-4 md:gap-2">
-        <div className="pb-6 2xl:h-full">
-          <small className="font-semibold">Communities</small>
-          <div className="my-2" />
-          <div className="w-full 2xl:h-full">
-            <DropdownMenu>
-              <DropdownMenuTrigger asChild>
-                <Button
-                  className="h-full w-full cursor-pointer !px-0 max-2xl:!px-3"
-                  variant="outline"
-                >
-                  <div className="w-full">
-                    <div className="flex flex-col items-center justify-center w-full">
-                      <div className="relative aspect-[3/4] 2xl:max-w-[175px] 2xl:h-[234px] max-2xl:max-h-[200px] w-full flex items-center justify-center">
-                        <div
-                          className="absolute inset-0 w-full h-full rounded-xl overflow-hidden"
-                          style={{ zIndex: 0 }}
-                        >
-                          <Image
-                            src={IMAGE_CONSTANTS.PRIDECORD_COVER}
-                            fill
-                            alt="Pridecord Cover"
-                            className="w-full h-full object-cover opacity-75 max-2xl:blur-2xl blur-md bg-white"
-                          />
-                        </div>
-                        <div className="relative flex items-center justify-center z-10">
-                          <Image
-                            src={IMAGE_CONSTANTS.PRIDECORD_COVER}
-                            width={940}
-                            height={940}
-                            alt="Pridecord Cover"
-                            className="rounded-xl object-fill w-[128px] h-[128px] md:w-[128px] md:h-[128px]"
-                          />
-                        </div>
-                      </div>
-                    </div>
-                    <div className="pt-3">Pridecord</div>
-                  </div>
-                </Button>
-              </DropdownMenuTrigger>
-              <PridecordDropdownContent />
-            </DropdownMenu>
-          </div>
-        </div>
         <div className="pb-6 2xl:h-full col-span-2">
           <small className="font-semibold">Anime</small>
           <div className="my-2" />

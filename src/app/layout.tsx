@@ -15,12 +15,12 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Gifted's site :3",
+  title: "...",
   icons: {
     icon: "image/favicon/favicon.ico",
     apple: "image/favicon/apple-touch-icon.png"
   },
-  description: "whats up discord users..",
+  description: "What happened?",
 };
 
 export default function RootLayout({
